@@ -1,0 +1,121 @@
+/* footer */
+#footer {
+    margin-top: 10rem;
+    padding: 10rem 0;
+    background-color: rgb(227, 227, 227);
+    -webkit-clip-path: inset(10px round 80px 20px 30px 10px);
+    clip-path: inset(0px round 120px 120px 0px 0px);
+    position: relative;
+    z-index: 5;
+}
+  
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h2 {
+        font-family: 'BIZ UDPMincho', serif;
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+        color: rgb(35, 35, 35);
+    }
+
+    & h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4rem;
+        margin-bottom: 3rem;
+        color: rgb(35, 35, 35);
+
+    }
+  
+}
+  
+#footer--image {
+    height: 50rem;
+}
+
+.anchor__bin {
+    display: flex;
+    justify-content: flex-start;
+}
+  
+#contact--btn {
+    width: 15rem;
+    padding: 1.3rem 1rem;
+    background-color: rgb(57, 136, 76);
+    transition: all 0.5s;
+    color: #eee;
+    font-size: 1.7rem;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+}
+  
+#copyright {
+    position: absolute;
+    bottom: 4%;
+    left: 15%;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(37, 37, 37);
+    font-size: 1.5rem;
+}
+
+@media (hover: hover) {
+    #contact--btn:hover {
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+}
+
+@media (max-width: 625px) {
+    .footer__heading h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    #footer {
+        -webkit-clip-path: inset(0px round 0px 0px 0px 0px);
+        clip-path: inset(0px round 0px 0px 0px 0px);
+    }
+    #copyright {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+
+}
+
+@media (max-width: 450px) {
+    .footer__heading h3 {
+        font-size: 1rem;
+    }
+
+    #contact--btn {
+        width: 12.5rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .footer__heading {
+    
+        & h2 {
+            font-size: 2rem;
+        }
+    
+        & h3 {
+            font-size: 0.8rem;
+        }
+    }
+}

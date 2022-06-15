@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Baskervville&family=Joan&family=Montserrat:wght@200;300;400;500;600&family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import "base/base";
+@import "abstracts/title";
+
+@import "layout/header";
+@import "layout/about";
+@import "layout/experience";
+@import "layout/projects";
+@import "layout/testimonials";
+@import "layout/skills";
+@import "layout/footer";
+@import "layout/contact";
+
+
+@import 'components/experienceItem';
+@import 'components/nav';
+@import 'components/menuBtn';
+@import 'components/hamburgerMenu';
+@import 'components/loader';
+
+
+
+@import 'abstracts/animations';

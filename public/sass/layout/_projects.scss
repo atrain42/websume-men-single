@@ -1,0 +1,145 @@
+#projects {
+    padding: 10rem 0;
+}
+
+#projects-title {
+    font-size: 4.5rem; 
+    font-family: 'Joan', serif;
+    color: rgb(227, 227, 227);
+    text-align: right;
+    padding-right: 13%;
+    margin-bottom: 7.5rem;
+}
+
+#project-img {
+    width: 45rem;
+    height: auto;
+    box-shadow: 0px 0px 10px 2.5px #00000066;
+    border-radius: 3px;
+}
+
+.project__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project__item {
+    display: flex;
+    justify-content: space-evenly;
+
+    &:nth-child(3) {
+        margin: 15rem 0;
+    }
+}
+
+.project__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &:nth-child(1) {
+        align-items: flex-start;
+    }
+
+    & h1 {
+        font-family: 'Joan', serif;
+        color: rgb(210, 210, 210);
+        font-size: 2.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    & h2 {
+        color: rgb(0, 74, 28);
+        font-size: 2rem;
+    }
+
+    & p {
+        width: 45rem;
+        text-align: right;
+        font-family: "Joan", serif;
+        line-height: 1.5;
+        font-size: 1.8rem;
+        color: rgb(35, 35, 35);
+    }
+}
+
+#mid-paragraph {
+    text-align: left;
+}
+
+@media (max-width: 1100px) {
+    .project__text p {
+        width: 40vw;
+        font-size: 1.5rem;
+    }
+
+}
+@media (max-width: 950px) {
+    #projects-title {
+        text-align: center;
+        padding-right: 0%;
+    }
+
+    #project-img {
+        width: 45rem;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .project__text {
+        align-items: center;
+
+        &:nth-child(1) {
+            align-items: center;
+        }
+    }
+
+    .project__item {
+        flex-direction: column;
+        align-items: center;
+    
+        &:nth-child(3) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+
+    .project__text p {
+        text-align: center;
+        width: 70vw;
+    }
+
+    #mid-paragraph {
+        text-align: center;
+        width: 70vw;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    #project-img {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #project-img {
+        width: 35rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #project-img {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #project-img {
+        width: 25rem;
+    }
+
+    #projects-title {
+        font-size: 3.5rem; 
+    }
+}

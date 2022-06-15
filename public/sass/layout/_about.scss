@@ -1,0 +1,160 @@
+#about {
+    padding: 10rem 0;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 10rem;
+
+    &-writing {
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+
+        & h2 {
+            font-size: 4.5rem; 
+            font-family: 'Joan', serif;
+            color: rgb(227, 227, 227);
+            margin-bottom: 2.5rem;
+        }
+
+        & h4 {
+            font-size: 1.8rem; 
+            font-family: 'Joan', serif;
+            color: rgb(210, 210, 210);
+            margin-bottom: 2rem;
+        }
+
+        & p {
+            font-size: 1.8rem;
+            width: 55rem;
+            font-weight: 500;
+            color: black;
+        }
+
+        & ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 3rem;
+            grid-gap: 3px;
+
+            & li {
+                color: black;
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+#owner {
+    height: 35rem;
+    width: auto;
+}
+
+@media (max-width: 1150px) {
+    .about__content p {
+        width: 45vw;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .about__content p {
+        font-size: 1.5rem;
+    }
+
+    .about__content-writing ul li {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    #about {
+        padding-top: 5rem;
+    }
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0rem;
+
+        & p {
+            width: 75vw;
+        }
+
+        &-writing {
+            width: 75vw;
+
+            & h2 {
+                font-size: 4.5rem; 
+                text-align: center;
+            }
+        }
+    }
+
+    #owner {
+        height: 30rem;
+        width: 30rem;
+        margin-top: 5rem;
+        align-self: flex-end;
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #owner {
+        align-self: center;
+        margin-right: 0rem;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+    .about__content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .about__content-writing {
+        & ul {
+            padding-left: 1.5rem;
+
+            & li {
+                font-size: 1.4rem;
+            }
+        } 
+
+        & p {
+            font-size: 1.4rem;
+        }
+
+    }
+
+    #owner {
+        height: 30rem;
+        width: 30rem
+    }
+
+}
+
+@media (max-width: 410px) {
+    .about__content-writing ul li {
+        font-size: 1.25rem;
+    }
+
+    #owner {
+        height: 25rem;
+        width: 25rem
+    }
+
+}
+
+@media (max-width: 400px) {
+    .about__content-writing h1 {
+        font-size: 3.5rem;
+    }
+
+}

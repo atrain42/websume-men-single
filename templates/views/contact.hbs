@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryce Johnson | Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {{>contactNav}}
+    <section id="contact">
+        <form class="contact__form" action="https://formsubmit.co/websume.net@gmail.com" method="POST">
+            <h1>Contact</h1>
+            <span>
+                <div class="labeled-input">
+                    <label for="first-name">First Name</label> 
+                    <input type="text" name="first-name" required>
+
+                </div>
+                <div class="labeled-input">
+                    <label for="last-name">Last Name</label> 
+                    <input type="email" name="last-name" required>
+                </div>
+
+            </span>
+            <span>
+                <div class="labeled-input">
+                    <label for="email">Email Address</label> 
+                    <input type="email" name="email" required>
+                </div>
+                <div class="labeled-input">
+                    <label for="payment">Subject</label>
+                    <input type="text" name="subject"> 
+                </div>
+            </span>
+            <textarea name="" cols="20" rows="20" placeholder="Please provide additional information"></textarea>
+            <button class="form--btn">Submit</button>
+        </form>
+    </section>
+    <script type="module" src="js/landing.js"></script>
+</body>
+</html>

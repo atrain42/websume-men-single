@@ -1,0 +1,82 @@
+.fancy-burger {
+    position: fixed;
+    top: 4%;
+    right: 4%;
+    width: var(--button-width);
+    height: var(--button-height);
+    border: 0;
+    background: transparent;
+    outline: none;
+    z-index: 1000;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.rectangle {
+    position: absolute;
+    height: var(--rectangle-height);
+    background: #c2d0cb;;
+    border-radius: var(--rectangle-radius);
+    transition: transform var(--transition);
+}
+
+.rectangle--small {
+    width: calc(var(--button-width) / 2);
+}
+
+.rectangle--top {
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+}
+
+.rectangle--top.open {
+    transform: translateX(var(--translate)) rotate(45deg);
+}
+
+.rectangle--middle {
+    top: 50%;
+    left: 0;
+    width: var(--button-width);
+    transform: translatey(-50%);
+}
+
+.rectangle--middle.open {
+    transform: translatey(-50%) rotate(-45deg);
+}
+
+.rectangle--bottom {
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom right;
+}
+
+.rectangle--bottom.open {
+    transform: translateX(calc(-1 * var(--translate))) rotate(45deg);
+}
+
+.menu-button-hidden {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .menu-button-hidden {
+        display: inline;
+    }
+}
+
+@media (max-width: 550px) {
+    .fancy-burger {
+        top: 2.75%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .fancy-burger {
+        right: 8%;
+    }
+
+}
