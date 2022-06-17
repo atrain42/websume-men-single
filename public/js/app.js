@@ -1,3 +1,5 @@
+import { HamburgerClass } from "./hamburgerAnimation.js";
+
 // Call loader animation function
 const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
@@ -69,25 +71,11 @@ zoom.forEach((el) => {
   headerObserver.observe(el);
 });
 
-//Hamburger button
-const menuBtn = document.querySelector(".fancy-burger");
-const hamburgerMenu = document.querySelector(".hamburger__anchors");
-const hamburgerLinks = document.querySelectorAll(".hamburger-link");
+const sections = document.querySelectorAll("section");
 
-function toggleHidden() {
-  hamburgerMenu.style.display = "inline";
-  hamburgerMenu.classList.toggle("unhide-menu");
-  menuBtn
-    .querySelectorAll("span")
-    .forEach((span) => span.classList.toggle("open"));
-}
-
-menuBtn.addEventListener("click", function () {
-  toggleHidden();
+export const sectionId = sections.forEach((section) => {
+  const secArray = [section.id];
+  console.log(secArray);
 });
 
-hamburgerLinks.forEach((link) => {
-  link.addEventListener("click", function () {
-    toggleHidden();
-  });
-});
+console.log(sections);

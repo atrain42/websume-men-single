@@ -964,11 +964,10 @@ blockquote cite {
   text-indent: 5px;
 }
 .contact__form button {
-  width: 20rem;
   margin: 2rem auto;
   border: 2px solid rgb(105, 105, 105);
   cursor: pointer;
-  padding: 1rem 1rem;
+  padding: 1rem 7rem;
   color: black;
   background-color: #9de1cd;
   transition: all 0.5s;
@@ -1008,8 +1007,14 @@ select {
   }
 }
 @media (max-width: 550px) {
+  #contact {
+    padding-top: 0rem;
+  }
   .contact__form {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
+  }
+  .contact__form textarea {
+    margin-top: 1.5rem;
   }
   .contact__form span {
     flex-direction: column;
@@ -1019,10 +1024,15 @@ select {
     width: 80vw;
     margin-bottom: 1.5rem;
   }
-}
-@media (max-width: 400px) {
   .contact__form h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+  }
+  .contact__form button {
+    padding: 1rem 4.5rem;
+  }
+  label {
+    font-size: 1.5rem;
   }
 }
 .experience__container {
