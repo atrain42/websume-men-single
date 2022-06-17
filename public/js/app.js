@@ -81,6 +81,7 @@ const hamburgerMenu = document.querySelector(".hamburger__anchors");
 const hamburgerLinks = document.querySelectorAll(".hamburger-link");
 
 function toggleHidden() {
+  hamburgerMenu.style.display = "inline";
   hamburgerMenu.classList.toggle("unhide-menu");
   menuBtn
     .querySelectorAll("span")
