@@ -1,9 +1,3 @@
-// Display a loaded while the entire page content loads
-const loader = document.querySelector(".loader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
-
 // Call loader animation function
 const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
